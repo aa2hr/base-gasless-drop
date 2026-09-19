@@ -1,5 +1,8 @@
 import './style.css';
 import { base, baseSepolia } from 'viem/chains';
+import { notifyReady } from './miniapp.js';
+
+notifyReady();
 
 const chainName = import.meta.env.VITE_CHAIN || 'base-sepolia';
 const chain = chainName === 'base' ? base : baseSepolia;
@@ -15,7 +18,7 @@ localStorage.setItem('bdrop-wallet', wallet);
 const app = document.querySelector('#app');
 app.innerHTML = `
   <main>
-    <p class="eyebrow">Base · ${chain.name} · ${chain.id}</p>
+    <p class="eyebrow">Base App Mini App · ${chain.name} · ${chain.id}</p>
     <h1>Gasless Drop</h1>
     <p>Paymaster pays the gas. Collector only signs the mint.</p>
     <div class="meta">

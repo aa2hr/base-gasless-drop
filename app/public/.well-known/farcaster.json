@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "ownerAddress": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Gasless Drop",
+    "subtitle": "Mint on Base without gas",
+    "description": "Paymaster-sponsored ERC-721 mint on Base. Collector signs; paymaster pays ETH.",
+    "homeUrl": "https://REPLACE_WITH_YOUR_HTTPS_DOMAIN",
+    "iconUrl": "https://REPLACE_WITH_YOUR_HTTPS_DOMAIN/icon.png",
+    "splashImageUrl": "https://REPLACE_WITH_YOUR_HTTPS_DOMAIN/splash.png",
+    "splashBackgroundColor": "#0b0f1a",
+    "heroImageUrl": "https://REPLACE_WITH_YOUR_HTTPS_DOMAIN/og.png",
+    "tagline": "Mint without ETH",
+    "ogTitle": "Gasless Drop on Base",
+    "ogDescription": "Sponsored NFT mint for Base App.",
+    "ogImageUrl": "https://REPLACE_WITH_YOUR_HTTPS_DOMAIN/og.png",
+    "primaryCategory": "art-creativity",
+    "tags": ["base", "nft", "paymaster", "gasless"],
+    "requiredChains": ["eip155:84532", "eip155:8453"],
+    "requiredCapabilities": ["actions.ready"],
+    "noindex": true
+  }
+}
